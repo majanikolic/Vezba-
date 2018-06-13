@@ -12,12 +12,9 @@ a:hover {color:pink;}
 
 body {background-color: #99ffcc;}
 
-#reg {color:#0000ff; font-size:20px; background-color:
+#reg {color:#0000ff; font-size:20px; background-color:#ffff66;}
+	 
 
-	 #66ffcc;}
-	 #reg1 {background-color: #33ccff; color:#0000ff}
-	h1 {color:
-	 #ff00ff; background-color:#66ff66;}
 	#prezime2 { color:red;
 	}
 
@@ -26,85 +23,125 @@ body {background-color: #99ffcc;}
 }
 </style>
 
-
+<meta charset="utf-8">
 </head>
 
 <body> 
-<a href="zadatak2.html">Predji na drugu stranu</a><br><br>
-<a href="zadatak1.html">Predji na prvu stranu</a><br><br>
- <a href="zadatak4.html">Predji na cetvrtu stranu</a><br><br>
- <a href="zadatak5.html">Predji na petu stranu</a><br><br>
-<h1>Druga stranica</h1>
+<a href="zadatak2.html">Pređi na drugu stranu</a><br><br>
+<a href="zadatak1.html">Pređi na prvu stranu</a><br><br>
+ <a href="zadatak4.html">Pređi na cetvrtu stranu</a><br><br>
+ <a href="zadatak5.html">Pređi na petu stranu</a><br><br>
 
 
-<div id="reg">
-
-
-<fieldset><legend><div id="a">Registruj se</div></legend>
-
-<label for="ime">Ime:</label>
-<input type="text" id="ime" name="ime">
-<br><br>
-
-
-<label for="prezime">Prezime:</label>
-<input type="text" id="prezime" name="prezime"></div>
+ <center>
+ 
+ <form name="mojaforma" action="proba" method="GET">
+		<div id="reg">
+		
+<fieldset>
+			<legend>
+				<div id="a">Registruj se</div>
+			</legend>
+			
+	<table border="1">
 
 
 
-<div id="reg1"
-<br><br>
-<label for="sifra">Lozinka:</label>
-<input type="password" id="sifra">
-
-<!-- input za radio-->
-<br><br>
-Pol:
-<label for="muski">Muski</label>
-<input type="radio" id="muski" name="pol" > 
-
-<label for="zenski">Zenski</label>
-<input type="radio" id="zenski" name="pol" > 
-<br><br>
-
-Drzava rodjenja:
-<select>
-	<option>Srbija</option>
-	<option selected>Madjarska</option>
-	<option selected>Francuska</option>
-	<option>Njemacka</option>
-
-</select>
-<br><br>
-
-
-<label for="da">Da li se pristajete da sacuvamo podatke?</label>
-<input type="checkbox" id="da">
-<br><br>
-Jezik na kom cete polagati ispit:
-<select  size="5" multiple>
-	<option>Njemacki</option>
-	<option>Francuski</option>
-	<option>Grcki</option>
-	<option>Engleski</option>
-	<option>Kineski</option>
-	<option>Bugarski</option>
-</select>	
-<p>	
-<label for="porukica">Komentar:</label></label>	
-<textarea id="porukica" height="30" width="60" >tekst</textarea></p>
-<br><br>
-<input type="submit" value="Prihvatam">
-<input type="reset" value="Resetuj">
+	<tr>
+		<td>Ime:</td>
+		<td><input type="text" id="ime" name="ime"></td>
 	
+	</tr>
+
+
+	<tr>
+		<td>Prezime:</td>
+		<td><input type="text" id="prezime" name="prezime"></div></td>
+	</tr>
+
+	<tr>
+	
+<div id="reg1">
+<br><br>
+		<td>Lozinka:</td>
+		<td><input type="password" id="sifra" maxlength="8"></td>
+	</tr>
+<!-- input za radio-->
+
+    <tr>
+	
+		<td>Pol:</td>
+	
+	
+		<td>
+				
+				
+				<input type="radio" id="muski" name="pol">M
+				<input type="radio" id="zenski" name="pol" >Ž
+		
+		
+		<td>
+		
+	</tr>
+	
+	<tr>
+		<td>Država rođenja:</td>
+		<td><select>
+		<option>Srbija</option>
+		<option selected>Madjarska</option>
+		<option selected>Francuska</option>
+		<option>Njemacka</option>
+		</select>
+		</td>
+	</tr>
+
+
+	<tr>
+	<td>Da li se pristajete da sačuvamo podatke?</td>
+	<td><input type="checkbox" id="da"></td>
+
+	</tr>
+	
+	<tr>
+	<td>Jezik na kom cete polagati ispit:
+	</td>
+	
+	<td>	
+		<select  size="5" multiple>
+		<option>Njemacki</option>
+		<option>Francuski</option>
+		<option>Grčki</option>
+		<option>Engleski</option>
+		<option>Kineski</option>
+		<option>Bugarski</option>
+		</select>
+	</td>	
+	</tr>
+	
+<p>	
+	<tr>
+			<td colspan="2">Komentar:	
+			<textarea id="porukica" cols="40" rows="6" >tekst</textarea></p>
+	</td>
+	</tr>
+
+	
+	<tr>
+		<td align="center" colspan="2">
+		
+	<input type="submit" value="Prihvatam">
+	<input type="reset" value="Resetuj">
+		</td>
+	</tr>
 </fieldset>
 </p>
 
 
+</table>
 
+</form>
 
-
-
+</center>
 
 </body>
 
